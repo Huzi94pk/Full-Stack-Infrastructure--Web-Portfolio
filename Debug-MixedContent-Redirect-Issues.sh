@@ -1,8 +1,17 @@
-// I faced alot of issues with elementor plugin. One of them was the elementor edit page would keep loading. Since, I serve my website on https, and some contents of elementor plugins are served on http, I had to debug the mixed content error by creating .htaccess and defining redirect rules. The other issue was with limited memory assigned to .php module. First Install Really Simple SSl plugin and follow the steps below 
-1. Navigate to wordpress directory
+// I faced alot of issues with elementor plugin. One of them was the elementor edit page would keep loading. 
+Since, I serve my website on https, and some contents of elementor plugins are served on http, 
+I had to debug the mixed content error by creating .htaccess and defining redirect rules. 
+The other issue was with limited memory assigned to .php module. I also faced 301 redirect issues. 
+I fixed those issues using the following steps:
+
+1. Install Really Simple SSl plugin and activate
+
+2. While activating, select Override SSL detection at the end of activation. 
+
+2. Navigate to wordpress directory
 cd /var/www/html/wordpress
 
-2. Open wp-config.php file
+3. Open wp-config.php file
 sudo nano wp-config.php 
 
 3. Under <?php add the following code
@@ -26,3 +35,6 @@ sudo nano php.ini
 6. Find the line memory_limit and increase memory
 memory_limit =256M
 
+7. Edit the.htaccess file
+sudo nano /var/www/html/wordpress/.htaccess
+Copy and paste the content from the file .htaccess.sh found in this respository. 
