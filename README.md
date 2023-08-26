@@ -4,5 +4,5 @@ This project is to Host a wordpress portfolio website on a full stack infrastruc
 2. Allocate an Elastic Public IP to the instance
 3. Create a Security Group to allow traffic on port 80, 443 and 22
 4. Use putty to SSH into the EC2 instance using the public IP and .ppk key
-5. Follow all 17 steps mentioned in the file 'EC2-Ubuntu-Deploy-Wordpress' to install apache2 server, mysql engine, php directories, and wordpress database into the Ec2       instance
-6. Desgin
+5. Follow all 17 steps mentioned in the file 'EC2-Ubuntu-Deploy-Wordpress' to setup wordpress on the Ubuntu instance by installing apache2 server, mysql engine, php runtime, and wordpress database. 
+6. Login to the wordpress website, and adjust the permalink to %POSTNAME 
