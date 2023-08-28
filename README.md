@@ -12,8 +12,10 @@ This project is to Host a wordpress portfolio website on a full stack infrastruc
 10. Place the Ubuntu EC2 instance begind an ALB in AWS. Configure isteners rules on port 80 to redirect traffic to port 443. On port 443, configure listener rule to forward all incoming traffic to the instance. This allows https connections to be made to the EC2 instnace, thus a secured connection to your website.
 11. While setting up ALB, create a target group that contains the Ubuntu EC2 instance where wordpress is setup. 
 12. On Hoseted Zone in Route 53, create an Alias A record for domain name huzaifaportfolio.com poiting to the ALB. Create a Cname record for subdomain www.huzaifaportfolio.com
-13. Login to wordpress using huzaifaportfolio.com/wp-admin.php, and install Astra Theme, Elementor Plug in, Essential Ad ons plugin.
-14. I
-15. 
+13. Login to wordpress using huzaifaportfolio.com/wp-admin.php
+14. Ensure the site-address and wordpress address is set to http://huzaifaportfolio.com/
+15. Install Astra Theme, Elementor Plugin, Essential Ad ons Plugin, SImply SSL Plugin
+16. This step will give you many errors. It took me a month to figure out the errors. Refer to Debug-Errors file to understand the errors. I faced php memory issues,          mixed-content, redirect loop and JSON object errors. 
+17. Desgin your portfolio! 
 
     
