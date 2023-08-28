@@ -8,9 +8,12 @@ This project is to Host a wordpress portfolio website on a full stack infrastruc
 6. Retrieve a SSL certificate using Certificate Manager for encrypted connected to your DNS
 7. Use putty to SSH into the EC2 instance using the public IP and .ppk key
 8. Follow all 17 steps mentioned in the file 'EC2-Ubuntu-Deploy-Wordpress' to setup wordpress on the Ubuntu instance by installing apache2 server, mysql engine, php runtime, and wordpress database. 
-9. Login to the wordpress website, and adjust the permalink to %POSTNAME
+9. Login to the wordpress website on huzaifaportfolio.com/wp-login.php, and adjust the permalink to %POSTNAME
 10. Place the Ubuntu EC2 instance begind an ALB in AWS. Configure isteners rules on port 80 to redirect traffic to port 443. On port 443, configure listener rule to forward all incoming traffic to the instance. This allows https connections to be made to the EC2 instnace, thus a secured connection to your website.
 11. While setting up ALB, create a target group that contains the Ubuntu EC2 instance where wordpress is setup. 
 12. On Hoseted Zone in Route 53, create an Alias A record for domain name huzaifaportfolio.com poiting to the ALB. Create a Cname record for subdomain www.huzaifaportfolio.com
-13. In Ubuntu EC2 instance, create .htaccess file wtih redirect rules that direct traffic from http to https. 
+13. Login to wordpress using huzaifaportfolio.com/wp-admin.php, and install Astra Theme, Elementor Plug in, Essential Ad ons plugin.
+14. I
+15. 
+
     
