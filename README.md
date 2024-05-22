@@ -3,7 +3,7 @@ This project is to Host a wordpress portfolio website on a full stack infrastruc
 |SSH Tool: Putty|
 1. Launch an Ubuntu EC2 Instance, and associate a .ppk key for SSH authentication
 2. Allocate an Elastic Public IP to the instance
-3. Create a Security Group to allow traffic on port 80, 443 and 22
+3. Create a Security Group to allow traffic on port 80, 443 and 22.
 4. Use AWS  DNS to purchase a domain name. I purchased DNS huzaifaportfolio.com
 5. Create a Hosted zone Zone huzaifaportfolio.com on Route53. 
 6. Retrieve a SSL certificate using Certificate Manager for encrypted connected to your DNS
