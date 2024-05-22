@@ -19,4 +19,8 @@ This project is to Host a wordpress portfolio website on a full stack infrastruc
 16. This step will give you many errors. It took me a month to figure out the errors. Refer to Debug-Errors file to understand the errors. I faced php memory issues,          mixed-content, redirect loop and JSON object errors. 
 17. Desgin your portfolio! 
 
+![image](https://github.com/Huzi94pk/Full-Stack-Infrastructure--Web-Portfolio/assets/102336525/ec9e3e41-d19a-4ccf-8a37-462384d0145a)
+
+
+
     
